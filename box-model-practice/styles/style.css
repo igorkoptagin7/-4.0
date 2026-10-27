@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0c10; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+
+.scene-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; 
+    aspect-ratio: 16 / 9; 
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    z-index: 1; 
+}
+
+.scene-bg {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 2; 
+}
+
+
+.glyph {
+    position: absolute;
+    z-index: 5; 
+    filter: drop-shadow(0 0 8px rgba(0, 255, 204, 0.8)) 
+            drop-shadow(0 0 20px rgba(0, 255, 204, 0.4));
+    transform: translate(-50%, -50%); 
+}
+
+.glyph-1 {
+    top: 50.5%;   
+    left: 40.5%;  
+    width: 6.5%;  
+}
+
+.glyph-2 {
+    top: 50.5%;  
+    left: 50%;    
+    width: 6.5%;  
+}
+
+.glyph-3 {
+    top: 50.5%;   
+    left: 59.5%;  
+    width: 6.5%;  
+}
